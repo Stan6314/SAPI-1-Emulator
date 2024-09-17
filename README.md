@@ -21,8 +21,6 @@ The principle of the emulator program
 
 The program mainly uses FabGL library classes for work. The graphical interface of the application is made up of the drawScanline function, which prepares individual points for display on a VGA monitor. Key presses on the connected PS2 keyboard are handled in the processKeyDown and processKeyUp functions. The actual emulation of the 8080 processor is done by an instance of the i8080 class.
 
-![screenshot](pmi80a.jpg)
-
 The second library used in the program is SPIFFS. This serves to create a "cassette tape recorder". Programs that would be stored on cassette are stored in ESP32 memory within SPIFFS as xxxx.bas files, where "xxxx" specifies the name entered in the "SAVE" or "LOAD" command.
 
 Using an emulator
